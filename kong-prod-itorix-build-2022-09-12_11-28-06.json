@@ -1,0 +1,1264 @@
+{
+  "id" : "631f17c5d16e1145501444de",
+  "cts" : 1662982085738,
+  "mts" : 1662982085738,
+  "createdBy" : "Shravan Shashil",
+  "modifiedBy" : "Shravan Shashil",
+  "kongAdminHost" : "http://34.209.75.192:8001/",
+  "runtime" : "kong-prod",
+  "workspace" : "itorix",
+  "swaggerId" : "62ecf22e5adecb51976f77b9",
+  "serviceName" : "payment-initiation-api-2",
+  "serviceId" : "ee0aa6a7-3751-431d-9a29-40f48008f84c",
+  "service" : {
+    "serviceName" : "payment-initiation-api-2",
+    "protocol" : "https",
+    "host" : "openbanking.com",
+    "basePath" : "/open-banking/v3.1/pisp",
+    "port" : 80,
+    "metadata" : {
+      "retries" : 5,
+      "client_certificate" : null,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "kongPayload" : {
+      "retries" : 5,
+      "path" : "/open-banking/v3.1/pisp",
+      "protocol" : "https",
+      "client_certificate" : null,
+      "connect_timeout" : 60000,
+      "port" : 80,
+      "write_timeout" : 60000,
+      "name" : "payment-initiation-api-2",
+      "host" : "openbanking.com",
+      "read_timeout" : 60000
+    }
+  },
+  "routes" : [ {
+    "routeName" : "GetInternationalScheduledPaymentsInternationalScheduledPaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-scheduled-payments/{InternationalScheduledPaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-scheduled-payments/{InternationalScheduledPaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalScheduledPaymentsInternationalScheduledPaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticPaymentConsentsConsentIdFundsConfirmation",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-payment-consents/{ConsentId}/funds-confirmation" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-payment-consents/{ConsentId}/funds-confirmation" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticPaymentConsentsConsentIdFundsConfirmation",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticStandingOrderConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-standing-order-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-standing-order-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticStandingOrderConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalScheduledPaymentConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-scheduled-payment-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-scheduled-payment-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalScheduledPaymentConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalPaymentConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-payment-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-payment-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalPaymentConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetFilePaymentConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/file-payment-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/file-payment-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetFilePaymentConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticScheduledPaymentConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-scheduled-payment-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-scheduled-payment-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticScheduledPaymentConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalPaymentsInternationalPaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-payments/{InternationalPaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-payments/{InternationalPaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalPaymentsInternationalPaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticStandingOrdersDomesticStandingOrderId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-standing-orders/{DomesticStandingOrderId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-standing-orders/{DomesticStandingOrderId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticStandingOrdersDomesticStandingOrderId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalPaymentConsentsConsentIdFundsConfirmation",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-payment-consents/{ConsentId}/funds-confirmation" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-payment-consents/{ConsentId}/funds-confirmation" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalPaymentConsentsConsentIdFundsConfirmation",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalScheduledPaymentConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-scheduled-payment-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-scheduled-payment-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalScheduledPaymentConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetFilePaymentsFilePaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/file-payments/{FilePaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/file-payments/{FilePaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetFilePaymentsFilePaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticPaymentConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-payment-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-payment-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticPaymentConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticPayments",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-payments" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-payments" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticPayments",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalStandingOrdersInternationalStandingOrderPaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-standing-orders/{InternationalStandingOrderPaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-standing-orders/{InternationalStandingOrderPaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalStandingOrdersInternationalStandingOrderPaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticPaymentConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-payment-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-payment-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticPaymentConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalScheduledPayments",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-scheduled-payments" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-scheduled-payments" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalScheduledPayments",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalStandingOrders",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-standing-orders" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-standing-orders" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalStandingOrders",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticStandingOrders",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-standing-orders" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-standing-orders" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticStandingOrders",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetFilePaymentsFilePaymentIdReportFile",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/file-payments/{FilePaymentId}/report-file" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/file-payments/{FilePaymentId}/report-file" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetFilePaymentsFilePaymentIdReportFile",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalPayments",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-payments" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-payments" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalPayments",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateFilePaymentConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/file-payment-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/file-payment-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateFilePaymentConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalStandingOrderConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-standing-order-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-standing-order-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalStandingOrderConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticStandingOrderConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-standing-order-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-standing-order-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticStandingOrderConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticPaymentsDomesticPaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-payments/{DomesticPaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-payments/{DomesticPaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticPaymentsDomesticPaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateFilePaymentConsentsConsentIdFile",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/file-payment-consents/{ConsentId}/file" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/file-payment-consents/{ConsentId}/file" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateFilePaymentConsentsConsentIdFile",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetFilePaymentConsentsConsentIdFile",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/file-payment-consents/{ConsentId}/file" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/file-payment-consents/{ConsentId}/file" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetFilePaymentConsentsConsentIdFile",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateDomesticScheduledPayments",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/domestic-scheduled-payments" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/domestic-scheduled-payments" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateDomesticScheduledPayments",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticScheduledPaymentConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-scheduled-payment-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-scheduled-payment-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticScheduledPaymentConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateInternationalPaymentConsents",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/international-payment-consents" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/international-payment-consents" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateInternationalPaymentConsents",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetDomesticScheduledPaymentsDomesticScheduledPaymentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/domestic-scheduled-payments/{DomesticScheduledPaymentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/domestic-scheduled-payments/{DomesticScheduledPaymentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetDomesticScheduledPaymentsDomesticScheduledPaymentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "GetInternationalStandingOrderConsentsConsentId",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/international-standing-order-consents/{ConsentId}" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "GET" ],
+      "paths" : [ "/international-standing-order-consents/{ConsentId}" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "GetInternationalStandingOrderConsentsConsentId",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  }, {
+    "routeName" : "CreateFilePayments",
+    "service" : {
+      "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+    },
+    "protocols" : [ "https", "http" ],
+    "methods" : [ "POST" ],
+    "paths" : [ "/file-payments" ],
+    "metadata" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "hosts" : [ "openbanking.com" ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false,
+      "headerCount" : 0
+    },
+    "kongPayload" : {
+      "headers" : null,
+      "path_handling" : "v0",
+      "service" : {
+        "id" : "ee0aa6a7-3751-431d-9a29-40f48008f84c"
+      },
+      "methods" : [ "POST" ],
+      "paths" : [ "/file-payments" ],
+      "hosts" : [ "openbanking.com" ],
+      "name" : "CreateFilePayments",
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "protocols" : [ "https", "http" ],
+      "strip_path" : false
+    }
+  } ],
+  "plugins" : [ {
+    "pluginName" : "basic-auth",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "configs" : {
+      "hide_credentials" : "false"
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : null,
+      "service" : null,
+      "name" : "basic-auth",
+      "config" : {
+        "hide_credentials" : "false"
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "hmac-auth",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "routeName" : "GetInternationalScheduledPaymentsInternationalScheduledPaymentId",
+    "configs" : {
+      "hide_credentials" : false,
+      "validate_request_body" : false
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : "GetInternationalScheduledPaymentsInternationalScheduledPaymentId",
+      "service" : null,
+      "name" : "hmac-auth",
+      "config" : {
+        "hide_credentials" : false,
+        "validate_request_body" : false
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "hmac-auth",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "routeName" : "GetDomesticPaymentConsentsConsentIdFundsConfirmation",
+    "configs" : {
+      "hide_credentials" : false,
+      "validate_request_body" : false
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : "GetDomesticPaymentConsentsConsentIdFundsConfirmation",
+      "service" : null,
+      "name" : "hmac-auth",
+      "config" : {
+        "hide_credentials" : false,
+        "validate_request_body" : false
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "key-auth",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "serviceName" : "payment-initiation-api",
+    "configs" : {
+      "key_names" : "x-api-key",
+      "key_in_body" : false,
+      "key_in_header" : true,
+      "key_in_query" : false,
+      "hide_credentials" : false,
+      "run_on_preflight" : true
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : null,
+      "service" : "payment-initiation-api",
+      "name" : "key-auth",
+      "config" : {
+        "key_names" : "x-api-key",
+        "key_in_body" : false,
+        "key_in_header" : true,
+        "key_in_query" : false,
+        "hide_credentials" : false,
+        "run_on_preflight" : true
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "cors",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "configs" : {
+      "origins" : "",
+      "methods" : "GET,POST",
+      "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+      "credentials" : true,
+      "max_age" : 3600
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : null,
+      "service" : null,
+      "name" : "cors",
+      "config" : {
+        "origins" : "",
+        "methods" : "GET,POST",
+        "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+        "credentials" : true,
+        "max_age" : 3600
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "cors",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "configs" : {
+      "origins" : "",
+      "methods" : "GET,POST",
+      "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+      "credentials" : true,
+      "max_age" : 3600
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : null,
+      "service" : null,
+      "name" : "cors",
+      "config" : {
+        "origins" : "",
+        "methods" : "GET,POST",
+        "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+        "credentials" : true,
+        "max_age" : 3600
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  }, {
+    "pluginName" : "cors",
+    "enabled" : true,
+    "workspaceName" : "itorix",
+    "configs" : {
+      "origins" : "",
+      "methods" : "GET,POST",
+      "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+      "credentials" : true,
+      "max_age" : 3600
+    },
+    "kongPayload" : {
+      "workspace" : "itorix",
+      "route" : null,
+      "service" : null,
+      "name" : "cors",
+      "config" : {
+        "origins" : "",
+        "methods" : "GET,POST",
+        "headers" : "Accept,Accept-Version,Content-Length,Content-MD5,Content-Type,Date,X-Auth-Token",
+        "credentials" : true,
+        "max_age" : 3600
+      },
+      "consumer" : null,
+      "enabled" : true
+    }
+  } ]
+}
