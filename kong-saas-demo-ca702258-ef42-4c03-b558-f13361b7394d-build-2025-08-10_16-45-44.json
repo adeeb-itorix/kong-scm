@@ -1,0 +1,65 @@
+{
+  "id" : "6898ccb8ada58a21746d491c",
+  "cts" : 1754844344823,
+  "mts" : 1754844344823,
+  "createdBy" : "Adeeb Tahir",
+  "modifiedBy" : "Adeeb Tahir",
+  "kongAdminHost" : "https://us.api.konghq.com",
+  "runtime" : "kong-saas-demo",
+  "controlPlane" : "Serverless",
+  "controlPlaneId" : "ca702258-ef42-4c03-b558-f13361b7394d",
+  "swaggerId" : "644e210babf159069cd309ba",
+  "serviceName" : "asset-events-kong",
+  "revision" : 1,
+  "swaggerVersion" : "3.0",
+  "swaggerName" : "asset-events-kong",
+  "serviceId" : "70800b01-d202-493b-b6ec-0ed32318e2e8",
+  "service" : {
+    "serviceName" : "asset-events-kong",
+    "protocol" : "https",
+    "host" : "mock.apiwiz.io",
+    "hosts" : [ "mock.apiwiz.io" ],
+    "basePath" : "/",
+    "basePaths" : [ "/" ],
+    "port" : 443,
+    "ports" : [ 443 ],
+    "metadata" : {
+      "retries" : 5,
+      "connect_timeout" : 60000,
+      "write_timeout" : 60000,
+      "read_timeout" : 60000
+    },
+    "kongKonnectPayload" : { }
+  },
+  "routes" : [ {
+    "routeId" : "826dc80e-9619-473c-a027-d6565fa8b282",
+    "routeName" : "getAssetEventData",
+    "service" : {
+      "_id" : "70800b01-d202-493b-b6ec-0ed32318e2e8"
+    },
+    "protocols" : [ "https" ],
+    "methods" : [ "GET" ],
+    "paths" : [ "/v1/events" ],
+    "metadata" : {
+      "headers" : [ ],
+      "path_handling" : "v0",
+      "hosts" : [ ],
+      "regex_priority" : 0,
+      "preserve_host" : false,
+      "strip_path" : false
+    },
+    "kongRuntime" : {
+      "id" : "6826d37d34fcbe696919941f",
+      "name" : "kong-saas-demo",
+      "kongAdminToken" : "kpat_ss3K1RNihjuMjLbAoQ6r7CJMCHsaYzARQfqwxdGML5GgWlg9H",
+      "kongAdminHost" : "https://us.api.konghq.com",
+      "tier" : "enterprise",
+      "type" : "saas",
+      "workspaceCount" : 0,
+      "readOnly" : false,
+      "sequence" : 4,
+      "dbless" : false
+    }
+  } ],
+  "plugins" : [ ]
+}
